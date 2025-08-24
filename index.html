@@ -140,25 +140,27 @@
       text-align: center;
       color: var(--ink-1);
     }
-    .service-list {
-      max-width: 900px;
-      margin: 0 auto;
-      list-style: none;
-      padding: 0;
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
     }
-    .service-list li {
-      margin-bottom: 1rem;
-      padding-left: 1.5rem;
-      position: relative;
+    .service-item {
+      background: #fff;
+      border-radius: 4px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
-    .service-list li::before {
-      content: '\\2022';
-      position: absolute;
-      left: 0;
-      color: var(--brand-gold);
-      font-size: 1.2rem;
-      line-height: 1.2rem;
-      top: 0.2rem;
+    .service-item h4 {
+      margin-top: 0;
+      color: var(--brand-purple);
+      margin-bottom: 0.5rem;
+    }
+    .service-item p {
+      color: var(--ink-1);
+      font-size: 0.95rem;
+      line-height: 1.4;
     }
     /* Contact form */
     .contact-section {
@@ -235,40 +237,67 @@
   <!-- Services section restored with full scope of work -->
   <section id="services" class="services">
     <h3>Our Services</h3>
-    <p>We deliver comprehensive communications‑infrastructure solutions that support our clients’ growth and resilience.</p>
-    <ul class="service-list">
-      <li><strong>Tower Construction &amp; Rigging:</strong> New tower builds, erections, structural modifications and decommissioning.</li>
-      <li><strong>Remote Site Development:</strong> Foundations, shelter installation, power systems and site logistics in hard‑to‑reach locations.</li>
-      <li><strong>Antenna &amp; Line Installation:</strong> Coax and fiber runs, antenna alignment and testing for dependable connectivity.</li>
-      <li><strong>Maintenance &amp; Inspection:</strong> Scheduled inspections, structural analysis, repairs, painting and corrosion control.</li>
-      <li><strong>Project Management &amp; Engineering:</strong> Design, permitting, compliance and end‑to‑end project oversight.</li>
-    </ul>
+    <p>Comprehensive telecommunications solutions for turf vendors, tower owners, carriers, and WISPs.</p>
+    <div class="services-grid">
+      <div class="service-item">
+        <h4>Tower Construction &amp; Tower Decommissioning</h4>
+        <p>We handle all aspects of tower construction &amp; decommissioning, ensuring safety and reliability for your network infrastructure.</p>
+      </div>
+      <div class="service-item">
+        <h4>Line &amp; Antenna Installation</h4>
+        <p>Our expert team installs and aligns antennas and radios for optimal performance and coverage. Seamless installation of fiber, coaxial cables, and Cat5 lines to ensure robust connectivity for your network.</p>
+      </div>
+      <div class="service-item">
+        <h4>Advanced Solutions for Wireless Internet Service Providers</h4>
+        <p>We've handled all of the industry's latest equipment and try to stay ahead of current trends in industry standards so our WISP installations reign supreme compared to other contractors.</p>
+      </div>
+      <div class="service-item">
+        <h4>Plumb and Tension</h4>
+        <p>Precise alignment and tensioning to ensure structural stability and optimal performance of your towers.</p>
+      </div>
+      <div class="service-item">
+        <h4>Tower Inspection and Analysis</h4>
+        <p>Detailed inspections and analysis to ensure your towers meet safety and operational standards. We also provide drone inspections at a competitive price.</p>
+      </div>
+      <div class="service-item">
+        <h4>Grounding Systems</h4>
+        <p>Installation of reliable grounding systems to protect your infrastructure from electrical surges and lightning.</p>
+      </div>
+      <div class="service-item">
+        <h4>Emergency Solutions</h4>
+        <p>Provide emergency or disaster relief to get your infrastructure up and running.</p>
+      </div>
+      <div class="service-item">
+        <h4>Lighting Installation</h4>
+        <p>Installation and maintenance of tower lighting systems to meet regulatory requirements and enhance visibility.</p>
+      </div>
+    </div>
   </section>
   <section id="gallery" class="gallery">
     <h3>Project Gallery</h3>
     <div class="gallery-grid">
       <figure class="gallery-item">
-        <img src="images/perrine-bridge.jpg" alt="Perrine Bridge spanning the Snake River canyon">
+        <img src="8C3F6EB7-4EF1-48AC-A4D0-F4332FD91AD3.jpeg" alt="Perrine Bridge spanning the Snake River canyon">
         <figcaption>Perrine Bridge</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img src="images/snake-river.jpg" alt="Snake River cutting through rugged canyon walls">
+        <img src="9EDC6961-F3D5-4187-B10B-5B68D87CD344.jpeg" alt="Snake River cutting through rugged canyon walls">
         <figcaption>Snake River Canyon</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img src="images/tower-in-fog.jpg" alt="Guyed radio tower disappearing into fog">
+        <img src="21EE55F6-5639-466F-8D9B-F4132E898C0F.jpeg" alt="Guyed radio tower disappearing into fog">
         <figcaption>Tower in Fog</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img src="images/tower-truck-below.jpg" alt="Steel tower leg with service truck below">
+        <img src="99BF03A1-E36E-4AC3-AE5F-67486DDB6EF54.jpeg" alt="Steel tower leg with service truck below">
         <figcaption>Tower &amp; Truck</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img src="images/rigging-close-1.jpg" alt="Climber performing rigging work on lattice tower">
+        <img src="68CD25C1-20BB-43E8-A7D5-1B40E9B6F03F.jpeg" alt="Climber performing rigging work on lattice tower">
         <figcaption>Climber at Work</figcaption>
       </figure>
       <figure class="gallery-item">
-        <img src="images/rigging-close-2.jpg" alt="Close‑up of climber on tower rigging">
+        <img src="CB6B7C4A-6F88-4504-A9C8-D515CD338A32.jpeg" alt="Close‑up of climber on tower rigging">
         <figcaption>Rigging Detail</figcaption>
       </figure>
     </div>
