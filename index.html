@@ -6,10 +6,10 @@
 <title>AstroBuildCo – Telecommunications Construction & Maintenance</title>
 <style>
 :root {
-  --midnight-blue: #0A1A2F;
-  --signal-blue: #1D5DFF;
-  --white: #ffffff;
-  --steel-gray: #9CA3AF;
+  --midnight-blue: #4C4349; /* dark charcoal */
+  --signal-blue: #B1974B;   /* gold accent */
+  --white: #F4F2EE;         /* off-white */
+  --steel-gray: #938E97;    /* muted gray */
 }
 body {
   margin:0;
@@ -24,6 +24,10 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+header img {
+  height: 50px;
+  margin-right: 1rem;
 }
 header h1 {
   margin:0;
@@ -40,7 +44,7 @@ nav a:hover {
   color: var(--signal-blue);
 }
 .hero {
-  background: linear-gradient(135deg, var(--midnight-blue), #102a52);
+  background: linear-gradient(135deg, var(--midnight-blue), var(--signal-blue));
   color: var(--white);
   text-align:center;
   padding: 5rem 2rem;
@@ -65,7 +69,7 @@ nav a:hover {
   display:inline-block;
 }
 .hero .cta-btn:hover {
-  background-color: #1a50d6;
+  background-color: #8D7938; /* darker gold */
 }
 .section {
   padding: 4rem 2rem;
@@ -82,7 +86,7 @@ nav a:hover {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 .service-item {
-  background-color: #102a52;
+  background-color: var(--midnight-blue);
   border-radius: 8px;
   padding: 1.5rem;
   color: var(--white);
@@ -105,7 +109,7 @@ nav a:hover {
   border-radius:4px 4px 0 0;
 }
 .gallery-item figcaption {
-  background-color: #102a52;
+  background-color: var(--midnight-blue);
   color: var(--white);
   padding: 0.5rem;
   text-align:center;
@@ -135,10 +139,10 @@ nav a:hover {
   cursor:pointer;
 }
 .contact-form button:hover {
-  background-color: #1a50d6;
+  background-color: #8D7938;
 }
 footer {
-  background-color: #102a52;
+  background-color: var(--midnight-blue);
   color: var(--steel-gray);
   text-align:center;
   padding:1rem;
@@ -151,7 +155,10 @@ footer {
 </head>
 <body>
 <header>
-  <h1>AstroBuildCo</h1>
+  <div style="display:flex; align-items:center;">
+    <img src="IMG_1990.JPG" alt="AstroBuildCo Logo">
+    <h1>AstroBuildCo</h1>
+  </div>
   <nav>
     <a href="#services">Services</a>
     <a href="#projects">Projects</a>
@@ -160,7 +167,7 @@ footer {
 </header>
 
 <section class="hero">
-  <h2>Building Connections, Empowering Networks</h2>
+  <h2>Building Connections, Strengthening Communities</h2>
   <p>AstroBuildCo is a trusted telecommunications contractor delivering comprehensive tower construction, wireless installations, microwave upgrades, and maintenance services for government and commercial clients.</p>
   <a href="#contact" class="cta-btn">Request a Quote</a>
   <a href="#services" class="cta-btn">Our Services</a>
@@ -196,16 +203,16 @@ footer {
   <h3>Featured Projects</h3>
   <div class="gallery-grid">
     <figure class="gallery-item">
-      <img src="8C3F6EB7-4EF1-48AC-A4D0-F4332FD91AD3.jpeg" alt="Perrine Bridge spanning the Snake River canyon">
-      <figcaption>Perrine Bridge</figcaption>
+      <img src="c122f76e-60c3-44be-8c33-0074301e222f.png" alt="Tower at sunset with golden sky">
+      <figcaption>Sunset Tower</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="9EDC6961-F3D5-4187-B10B-5B68D87CD344.jpeg" alt="Snake River cutting through rugged canyon walls">
-      <figcaption>Snake River Canyon</figcaption>
+      <img src="c6f4fc27-3481-42b4-805c-7971579c79d6.png" alt="Remote telecom site nestled in the landscape">
+      <figcaption>Remote Site</figcaption>
     </figure>
     <figure class="gallery-item">
-      <img src="21EE55F6-5639-466F-8D9B-F4132E898C0F.jpeg" alt="Guyed radio tower disappearing into fog">
-      <figcaption>Tower in Fog</figcaption>
+      <img src="5a5265ba-e5c5-4e41-9e8b-d331cb1880f3.jpg" alt="Tower with maintenance trucks at its base">
+      <figcaption>Tower & Trucks</figcaption>
     </figure>
     <figure class="gallery-item">
       <img src="99BF03A1-E36E-4AC3-AE5F-67486DDB6EF54.jpeg" alt="Steel tower leg with service truck below">
@@ -239,7 +246,7 @@ footer {
 </section>
 
 <footer>
-  &copy; 2025 AstroBuildCo. All rights reserved.
+  &copy; 2026 AstroBuildCo. All rights reserved.
 </footer>
 </body>
 </html>
